@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #headh1{
+            color: white; background-color: black;
+        }
+        h1{
+            color: red  /*!important */; 
+
+            color: blue; /* aşğadaki çalışır yukradan aşağı  !important */
+        }
+         /* yukardan aşağı çalışır genel seçiciler en tepye sonra özeler  */
+         #logo{color: red;}
+        .info{
+            font-size: 22px;
+        }
+        #para1,.lead{color: red;}
+        ul li a{text-decoration: none;}
+        .info span{font-size: 25px; font-weight: 600; color: crimson;}
+        .info .primary{  color: blue;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="headh1">header 1</h1>
+        <h1 id="logo">logo</h1>
+        <ul>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">services</a></li>
+        </ul>
+    </header>
+
+    <h1>header 2</h1>
+    <p id="oara1" class="lead info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, ducimus.</p>
+    <p class="info">Lorem ipsum <span>dolor</span> , sit amet consectetur adipisicing elit. Sit, ducimus.</p>
+    <p class="info">Lorem ipsum dolor, sit amet <span class="primary">consectetur </span> adipisicing elit. Sit, ducimus.</p>
+    <p>test paragrah</p>
+
+</body>
+</html>
